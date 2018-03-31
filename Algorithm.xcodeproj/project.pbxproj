@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		395847F91E25FDB6002F7EEF /* Combinatorics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395847F81E25FDB6002F7EEF /* Combinatorics.swift */; };
 		39791D131E137C730075E5F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39791D121E137C730075E5F3 /* main.swift */; };
+		39C412CD206F4687002A0A9B /* Longest_Palindromic_Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C412CC206F4687002A0A9B /* Longest_Palindromic_Substring.swift */; };
+		39C412CF206F4954002A0A9B /* ZigZag_Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C412CE206F4954002A0A9B /* ZigZag_Conversion.swift */; };
+		39D6696B206DF7CF00F6288E /* Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6696A206DF7CF00F6288E /* Benchmark.swift */; };
 		39EB66B41E2C606A00EBE918 /* NumberTheory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB66B31E2C606A00EBE918 /* NumberTheory.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		395847F81E25FDB6002F7EEF /* Combinatorics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combinatorics.swift; sourceTree = "<group>"; };
 		39791D0F1E137C730075E5F3 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		39791D121E137C730075E5F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		39C412CC206F4687002A0A9B /* Longest_Palindromic_Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Longest_Palindromic_Substring.swift; sourceTree = "<group>"; };
+		39C412CE206F4954002A0A9B /* ZigZag_Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZag_Conversion.swift; sourceTree = "<group>"; };
+		39D6696A206DF7CF00F6288E /* Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Benchmark.swift; sourceTree = "<group>"; };
 		39EB66B31E2C606A00EBE918 /* NumberTheory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTheory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,11 +67,22 @@
 		39791D111E137C730075E5F3 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				39C412CB206F4669002A0A9B /* Leetcode */,
 				39791D121E137C730075E5F3 /* main.swift */,
 				395847F81E25FDB6002F7EEF /* Combinatorics.swift */,
 				39EB66B31E2C606A00EBE918 /* NumberTheory.swift */,
+				39D6696A206DF7CF00F6288E /* Benchmark.swift */,
 			);
 			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		39C412CB206F4669002A0A9B /* Leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				39C412CC206F4687002A0A9B /* Longest_Palindromic_Substring.swift */,
+				39C412CE206F4954002A0A9B /* ZigZag_Conversion.swift */,
+			);
+			path = Leetcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C412CD206F4687002A0A9B /* Longest_Palindromic_Substring.swift in Sources */,
 				39EB66B41E2C606A00EBE918 /* NumberTheory.swift in Sources */,
+				39D6696B206DF7CF00F6288E /* Benchmark.swift in Sources */,
+				39C412CF206F4954002A0A9B /* ZigZag_Conversion.swift in Sources */,
 				39791D131E137C730075E5F3 /* main.swift in Sources */,
 				395847F91E25FDB6002F7EEF /* Combinatorics.swift in Sources */,
 			);
