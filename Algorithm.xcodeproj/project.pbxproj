@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392B08CB2071FC3B0087E192 /* ValidParenthese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B08CA2071FC3B0087E192 /* ValidParenthese.swift */; };
 		395847F91E25FDB6002F7EEF /* Combinatorics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395847F81E25FDB6002F7EEF /* Combinatorics.swift */; };
 		39791D131E137C730075E5F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39791D121E137C730075E5F3 /* main.swift */; };
 		3990B2002070A6EF0090AC68 /* String_To_Integer(atoi).swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990B1FF2070A6EF0090AC68 /* String_To_Integer(atoi).swift */; };
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		392B08CA2071FC3B0087E192 /* ValidParenthese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParenthese.swift; sourceTree = "<group>"; };
 		395847F81E25FDB6002F7EEF /* Combinatorics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combinatorics.swift; sourceTree = "<group>"; };
 		39791D0F1E137C730075E5F3 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		39791D121E137C730075E5F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				39C412CC206F4687002A0A9B /* Longest_Palindromic_Substring.swift */,
 				39C412CE206F4954002A0A9B /* ZigZag_Conversion.swift */,
 				3990B1FF2070A6EF0090AC68 /* String_To_Integer(atoi).swift */,
+				392B08CA2071FC3B0087E192 /* ValidParenthese.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			files = (
 				39C412CD206F4687002A0A9B /* Longest_Palindromic_Substring.swift in Sources */,
 				39EB66B41E2C606A00EBE918 /* NumberTheory.swift in Sources */,
+				392B08CB2071FC3B0087E192 /* ValidParenthese.swift in Sources */,
 				39D6696B206DF7CF00F6288E /* Benchmark.swift in Sources */,
 				3990B2022070B6D60090AC68 /* Helpers.swift in Sources */,
 				3990B2002070A6EF0090AC68 /* String_To_Integer(atoi).swift in Sources */,
