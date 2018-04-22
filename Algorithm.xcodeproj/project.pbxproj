@@ -16,6 +16,7 @@
 		39C412CD206F4687002A0A9B /* Longest_Palindromic_Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C412CC206F4687002A0A9B /* Longest_Palindromic_Substring.swift */; };
 		39C412CF206F4954002A0A9B /* ZigZag_Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C412CE206F4954002A0A9B /* ZigZag_Conversion.swift */; };
 		39D6696B206DF7CF00F6288E /* Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6696A206DF7CF00F6288E /* Benchmark.swift */; };
+		39E53907208C7826001940FF /* DynamicLineIntersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E53906208C7826001940FF /* DynamicLineIntersection.swift */; };
 		39EB66B41E2C606A00EBE918 /* NumberTheory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB66B31E2C606A00EBE918 /* NumberTheory.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		39C412CC206F4687002A0A9B /* Longest_Palindromic_Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Longest_Palindromic_Substring.swift; sourceTree = "<group>"; };
 		39C412CE206F4954002A0A9B /* ZigZag_Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZag_Conversion.swift; sourceTree = "<group>"; };
 		39D6696A206DF7CF00F6288E /* Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Benchmark.swift; sourceTree = "<group>"; };
+		39E53906208C7826001940FF /* DynamicLineIntersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLineIntersection.swift; sourceTree = "<group>"; };
 		39EB66B31E2C606A00EBE918 /* NumberTheory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTheory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 		39791D111E137C730075E5F3 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				39E53905208C7806001940FF /* Hackerrank */,
 				39C412CB206F4669002A0A9B /* Leetcode */,
 				39791D121E137C730075E5F3 /* main.swift */,
 				395847F81E25FDB6002F7EEF /* Combinatorics.swift */,
@@ -95,6 +98,14 @@
 				392B08CC2072090F0087E192 /* GenerateParentheses.swift */,
 			);
 			path = Leetcode;
+			sourceTree = "<group>";
+		};
+		39E53905208C7806001940FF /* Hackerrank */ = {
+			isa = PBXGroup;
+			children = (
+				39E53906208C7826001940FF /* DynamicLineIntersection.swift */,
+			);
+			path = Hackerrank;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 				392B08CB2071FC3B0087E192 /* ValidParenthese.swift in Sources */,
 				39D6696B206DF7CF00F6288E /* Benchmark.swift in Sources */,
 				3990B2022070B6D60090AC68 /* Helpers.swift in Sources */,
+				39E53907208C7826001940FF /* DynamicLineIntersection.swift in Sources */,
 				392B08CD2072090F0087E192 /* GenerateParentheses.swift in Sources */,
 				3990B2002070A6EF0090AC68 /* String_To_Integer(atoi).swift in Sources */,
 				39C412CF206F4954002A0A9B /* ZigZag_Conversion.swift in Sources */,
