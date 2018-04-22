@@ -10,7 +10,7 @@ import Foundation
 
 class DynamicLineIntersection {
     func dynamicLineIntersection(n: Int) -> Void {
-        var myDict = [Int: Set<Int>]()
+        var myDict = [Int: [Int: Int]]()
         for _ in 0..<n {
             let str = (readLine()?.trimmingCharacters(in: .whitespacesAndNewlines))!
             let subStrArray = str.split(separator: " ")
@@ -21,29 +21,34 @@ class DynamicLineIntersection {
                 let slope = Int(subStrArray[1])!
                 let yIntercept = Int(subStrArray[2])!
                 if myDict[slope] == nil {
-                    myDict[slope] = Set<Int>()
+                    myDict[slope] = [Int: Int]()
                 }
-                myDict[slope]?.insert(yIntercept)
+                if myDict[slope]![yIntercept] == nil {
+                    myDict[slope]![yIntercept] = 1
+                } else {
+                    myDict[slope]![yIntercept]! += 1
+                }
                 
             } else if firstElement == "-" {
                 
                 let slope = Int(subStrArray[1])!
                 let yIntercept = Int(subStrArray[2])!
-                myDict[slope]?.remove(yIntercept)
+                
+                myDict[slope]![yIntercept]! -= 1
                 
             } else {
                 
                 let queryIntercept = Int(subStrArray[1])!
-                var count = 0
-                for (slope, interceptSet) in myDict {
-                    interceptSet.forEach {
-                        if (queryIntercept - $0) % slope == 0 {
-                            count += 1
+                var intersectionCount = 0
+                for (slope, interceptDict) in myDict {
+                    for (intercept, count) in interceptDict {
+                        if (queryIntercept - intercept) % slope == 0 {
+                            intersectionCount += count
                         }
                     }
                 }
                 
-                print(count)
+                print(intersectionCount)
             }
         }
     }
