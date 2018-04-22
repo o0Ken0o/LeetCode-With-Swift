@@ -36,14 +36,28 @@ class DynamicLineIntersection {
                 
                 myDict[slope]![yIntercept]! -= 1
                 
+                if myDict[slope]![yIntercept]! == 0 {
+                    myDict[slope]![yIntercept] = nil
+                }
+                
             } else {
                 
                 let queryIntercept = Int(subStrArray[1])!
                 var intersectionCount = 0
                 for (slope, interceptDict) in myDict {
-                    for (intercept, count) in interceptDict {
-                        if (queryIntercept - intercept) % slope == 0 {
-                            intersectionCount += count
+                    
+                    let keyArray = Array(interceptDict.keys).sorted()
+                    let min = keyArray.min()!
+                    let max = keyArray.max()!
+                    let remainder = queryIntercept % slope
+
+                    let smallestQuotient = min / slope
+                    let largestQuotient = max / slope
+
+                    for i in smallestQuotient...largestQuotient {
+                        let x = slope * i + remainder
+                        if interceptDict[x] != nil {
+                            intersectionCount += interceptDict[x]!
                         }
                     }
                 }
